@@ -1,0 +1,48 @@
+@import '../../variables.scss';
+
+.pagination {
+    margin-bottom: 0px;
+
+    .page-item.active {
+        .page-link {
+            background-color: $color-background  !important;
+            border-color: $color-background  !important;
+            color: #ffffff !important;
+        }
+    }
+
+    &.vertical {
+        margin-bottom: 0px;
+        display: unset !important;
+
+        .page-item {
+            width: 40px;
+            height: 40px;
+
+            .page-link {
+                width: 40px !important;
+                height: 40px !important;
+                border-radius: 0px !important;
+                padding: 0.375rem 0.85rem !important;
+                margin-left: 0px !important;
+                background-color: #ffffff;
+            }
+
+            &.active {
+                .page-link {
+                    background-color: $color-bg  !important;
+                    border-color: $color-bg  !important;
+                    color: $color-text !important;
+                }
+            }
+        }
+    }
+}
+
+.page-link {
+    color: $color-text  !important;
+}
+
+.page-item.disabled .page-link {
+    color: $color-background  !important;
+}

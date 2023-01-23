@@ -1,0 +1,245 @@
+@import '../../../variables.scss';
+
+.user-list {
+    width: 25%;
+
+    .filter {
+        display: flex;
+
+        .filter-item {
+            display: flex;
+            align-items: center;
+            // padding: 5px;
+            margin-right: 10px;
+        }
+
+        svg {
+            fill: $color-text;
+            cursor: pointer;
+            background: #ffffffcc;
+            padding: 0px !important;
+            border-radius: 30px;
+            width: 100px;
+            height: 34px;
+        }
+    }
+}
+
+.actiity-list {
+    width: 75%;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+
+    /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.user-time-tracked {
+    height: calc(100vh - 140px);
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+
+    /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .list-group-item {
+        margin: 0px 10px 5px 0px;
+        border-radius: inherit;
+        box-shadow: $header-boxshadow;
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
+        border: 1px solid rgba(94, 92, 92, 0.18) !important;
+
+        small {
+            font-size: 0.6em;
+        }
+
+        code {
+            color: $color-background;
+            margin-left: 8px;
+        }
+
+        svg {
+            color: $color-background !important;
+        }
+
+        &.active {
+            background: rgba(255, 255, 255, 0.25);
+            color: $color-text !important;
+
+            svg {
+                color: $color-background !important;
+            }
+        }
+    }
+}
+
+.activity-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .card {
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
+        border: 1px solid rgba(123, 123, 123, 0.18);
+
+        box-shadow: $header-boxshadow;
+
+        width: 16%;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+
+        &.copy::after {
+            content: 'dups';
+            background-color: $color-text;
+            color: #ffffff;
+            padding: 0px 5px;
+            position: absolute;
+            top: 0;
+            border-radius: 0px 0px 5px 0px;
+        }
+
+        .list-group {
+            background: transparent;
+
+            .list-group-item {
+                background: transparent;
+                padding: 2px 10px;
+
+                &.activity {
+                    font-size: 12px;
+
+                    code {
+                        color: $color-background;
+                    }
+                }
+            }
+        }
+
+        img {
+            cursor: pointer;
+            padding: 0px;
+            min-height: 140px;
+        }
+
+        .card-body {
+            padding: 5px 10px;
+
+            &.activity {
+                font-size: 12px;
+
+                code {
+                    color: $color-background;
+                }
+            }
+        }
+    }
+}
+
+.activity-images-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .card {
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
+        border: 1px solid rgba(123, 123, 123, 0.18);
+
+        box-shadow: $header-boxshadow;
+
+        width: 30%;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+
+        &.copy::after {
+            content: 'dups';
+            background-color: $color-text;
+            color: #ffffff;
+            padding: 0px 5px;
+            position: absolute;
+            top: 0;
+            border-radius: 0px 0px 5px 0px;
+        }
+
+        .list-group {
+            background: transparent;
+
+            .list-group-item {
+                background: transparent;
+                padding: 2px 10px;
+
+                &.activity {
+                    font-size: 12px;
+
+                    code {
+                        color: $color-background;
+                    }
+                }
+            }
+        }
+
+        .card-body {
+            padding: 5px 10px;
+
+            img {
+                cursor: pointer;
+                padding: 0px;
+                // min-height: 140px;
+                width: 100px;
+            }
+
+            &.activity {
+                font-size: 12px;
+
+                .project-name {
+                    font-weight: 500;
+                    padding: 0px 8px;
+                    z-index: 1;
+                    position: absolute;
+                    background: rgba(255, 255, 255, 0.85);
+                    border-radius: 0px 0px 10px;
+                }
+
+                .start-end {
+                    white-space: nowrap;
+                }
+
+                code {
+                    color: $color-background;
+                }
+            }
+        }
+    }
+}
+
+.activity-modal {
+    .modal-dialog {
+        width: 80vw;
+        max-width: none !important;
+
+        .modal-content {
+            overflow: hidden;
+            .modal-body {
+                padding: 0px;
+
+                .activity-modal-detail {
+                    padding: 10px 15px 10px 0px;
+                }
+            }
+        }
+    }
+}

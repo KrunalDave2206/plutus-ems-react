@@ -1,0 +1,32 @@
+.career-apply {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    // margin-bottom: 2rem;
+
+    .langin {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .card {
+
+            background-color: #ffffff66;
+            border-radius: 10px;
+            overflow: hidden;
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+
+            .card-body {
+                background-color: #ffffff00;
+                .form-label{
+                    padding: 0px;
+                }
+            }
+        }
+    }
+}

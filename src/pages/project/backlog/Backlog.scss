@@ -1,0 +1,74 @@
+@import '../../../variables.scss';
+.bl-view{
+    margin: 35px 0px 0px 25px !important;
+    padding-right: 25px;
+    padding-bottom: 35px;
+    max-height: 90vh;
+    overflow-y: auto;
+    .bl-task-list{    
+        .bl-task-title{
+            background-color: #ffffff;
+            padding: 10px 30px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: $card-shadow;
+            color: $color-text;
+        }    
+        .bl-task {
+            background-color: #ffffff;
+            padding: 5px 10px;
+            // margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: $card-shadow;
+
+            .btn-link {
+                text-decoration: none;
+                background-color: $color-bg;
+                color: $color-background;
+                font-size: 12px;
+                padding: 3px 8px !important;
+                cursor: pointer;
+            }
+            .sm-assign {
+                background-color: $color-bg;
+                color: $color-background;
+                font-size: 12px;
+                padding: 3px 6px;
+                border-radius: 8px;
+                &.tooltip1 {
+                    .tooltiptext{
+                        right: 28px;
+                    }
+                }
+            }
+            .status-state {
+                font-size: 12px;
+                padding: 5px 6px;
+                color: #ffffff;
+                border-radius: 8px;
+                background-color: $task-status-normal;
+                &.todo { background-color: $task-status-todo;}
+                &.done { background-color: $task-status-done;}
+            }
+            .priority{
+                font-size: 12px;
+                padding: 5px 6px;
+                color: #ffffff;
+                border-radius: 8px;
+                &.lowest { background-color: $task-priority-lowest;}
+                &.low { background-color: $task-priority-low;}
+                &.medium { background-color: $task-priority-medium;}
+                &.high { background-color: $task-priority-high;}
+                &.highest { background-color: $task-priority-highest;}
+            }
+            .bl-move-to {
+                background-color: $color-bg;
+                color: $color-text;
+                font-size: 12px;
+                padding: 3px 6px;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+        }
+    }
+}

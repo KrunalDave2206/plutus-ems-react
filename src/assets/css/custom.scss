@@ -1,0 +1,9 @@
+// Override default variables before the import
+$body-bg: #fff;
+
+$offcanvas-horizontal-width: 250px;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+.cursor-pointer{ cursor: pointer; }

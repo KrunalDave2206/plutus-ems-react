@@ -1,0 +1,46 @@
+@import '../../variables.scss';
+
+.fc-col-header-cell {
+    a {
+        text-decoration: none;
+        color: $color-text  !Important;
+    }
+}
+
+.fc-daygrid-day-number {
+    text-decoration: none;
+    color: $color-text  !Important;
+}
+.dash {
+    &.hstack { align-items: baseline !important; }
+}
+.monthly-cal {
+    max-height: calc(108vh - 150px);
+    overflow: auto;
+    .current {
+        .event-date{ font-weight: 700; }
+        .event-data {
+            border-left: 3px solid $color-background;
+        }
+    }
+
+    .event-date {
+        border-right: 1px solid $color-background;
+        color: $color-background;
+    }
+
+    .event-data {
+        padding: 2px 10px;
+
+        .cal-event {
+            padding: 5px 15px;
+            border-radius: 10px;
+            margin: 5px 0px;
+            color: $color-background;
+            &.leaves { background-color: #a8dadc; }
+            &.birth_day { background-color: #ef476f; color: #ffffff; }
+            &.interview { background-color: #00b4d8; }
+            &.holiday { background-color: #bfc0c0; }
+        }
+    }
+}

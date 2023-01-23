@@ -1,0 +1,100 @@
+@import '../../../variables.scss';
+
+.task-header{
+    .task-header-icon {
+        fill: #959595 !important;
+        path { stroke: #959595 !important; }
+    }
+}
+.project-taem {
+    padding: 15px 15px 0px;
+    .team-mem {
+        background-color: #ffffff;
+        border: solid 1px #c5c5c5;
+        height: 35px;
+        width: 35px;
+        line-height: 32px;
+        text-align: center;
+        border-radius: 100px;
+        cursor: pointer;
+        &.sel {
+            background-color: $color-text;
+            color: #ffffff;
+        }
+    }
+}
+.task-list {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 15px;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+
+    /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .status-box {
+        min-width: 280px;
+        border: none;
+        overflow: visible;
+        background-color: transparent;
+        .card-header{ 
+            box-shadow: $card-shadow;
+            background-color: #ffffff;
+            font-weight: 600;
+            color: $color-text;
+            border: none;
+            box-shadow: $card-shadow;
+            margin-bottom: 10px;
+            border-radius: 5px;            
+        }
+        .task-card{
+            border: none;
+            .task-detail {
+                padding: 10px 15px !important;
+                box-shadow: $card-shadow;
+                border: none;
+
+                .task-row {
+                    .detail {
+                        .btn-link {
+                            text-decoration: none;
+                            background-color: $color-bg;
+                            color: $color-background;
+                            font-size: 12px;
+                            padding: 3px 8px !important;
+                            cursor: pointer;
+                        }
+            
+                        .sm-assign {
+                            background-color: $color-bg;
+                            color: $color-background;
+                            font-size: 12px;
+                            padding: 3px 6px;
+                            margin-left: 5px;
+                            border-radius: 8px;
+                        }
+                        .priority{
+                            font-size: 12px;
+                            padding: 4px 8px;
+                            color: #ffffff;
+                            border-radius: 8px;
+                            &.lowest { background-color: $task-priority-lowest;}
+                            &.low { background-color: $task-priority-low;}
+                            &.medium { background-color: $task-priority-medium;}
+                            &.high { background-color: $task-priority-high;}
+                            &.highest { background-color: $task-priority-highest;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    
+}

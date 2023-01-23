@@ -1,0 +1,46 @@
+@import '../../../variables.scss';
+
+.proj-team {
+    .form-control{
+        padding: 4px 10px;
+        line-height: 1;
+    }
+    .team-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 5px 0px;
+        .caps {
+            background-color: $color-bg;
+            color: $color-text;
+            border-radius: 10px;
+            margin: 0px 5px 5px 0px;
+            padding: 0px 8px;
+            cursor: pointer;
+            &.active{
+                background-color: $color-text;
+                color: #ffff;
+            }
+        }
+    }
+
+    .list-group {
+        max-height: 230px;
+        overflow-y: auto;
+
+        .list-group-item.active {
+            background-color: $color-text;
+            border-color: rgba($color-text, 0.1);
+        }
+    }
+}
+
+.status-btn {
+    border-color: #ffff !important;
+    border-radius: 0px !important;
+}
+
+.status-list {
+    max-height: 230px;
+    overflow: auto;
+}

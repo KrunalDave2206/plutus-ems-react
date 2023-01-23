@@ -1,0 +1,70 @@
+@import '../../variables.scss';
+
+.project-page-view {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    .project-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-height: calc(100vh - 118px);
+        overflow-y: auto;
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+
+        /* Firefox */
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .project-view {
+            display: flex;
+            flex-direction: row;
+            margin: 0px 0.8rem 0.8rem 0px;
+            border-radius: 10px;
+            box-shadow: $card-shadow;
+
+            .action {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                background-color: #ffffff66;
+                // background-color: rgba($color-text, 0.1);
+                margin: 3px 0px;
+                padding: 2px;
+                border-end-end-radius: 10px;
+                border-start-end-radius: 10px;
+                border-left: 2px solid $color-text;
+
+            }
+
+            .detail {
+                background-color: #ffffff;
+                // backdrop-filter: blur(14px);
+                // -webkit-backdrop-filter: blur(14px);
+                padding: 15px 15px;
+                border-start-start-radius: 10px;
+                border-end-start-radius: 10px;
+
+                .name {
+                    font-size: 22px;
+                    color: $color-text;
+                }
+
+                .client-detail {
+                    font-size: 12px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    &::-webkit-input-placeholder::before {
+                        color: #666;
+                        content: "Line 1\A Line 2\A Line 3\A";
+                    }
+                }
+            }
+        }
+    }
+}

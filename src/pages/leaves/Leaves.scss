@@ -1,0 +1,84 @@
+@import '../../variables.scss';
+
+.leaves-pag-view {
+    justify-content: space-between;
+
+    .leaves-view {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        width: 90%;
+
+        .leave-view {
+            display: flex;
+            flex-direction: column-reverse;
+            margin: 0px 0.8rem 0.8rem 0px;
+            border-radius: 10px;
+            box-shadow: $card-shadow;
+
+            .action {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                background-color: #ffffff66;
+                // background-color: rgba($color-text, 0.1);
+                margin: 0px 3px;
+                padding: 5px;
+                border-end-end-radius: 15px;
+                border-end-start-radius: 15px;
+                border-top: 2px solid $color-text;
+            }
+
+            .detail {
+                background-color: #ffffff;
+                // backdrop-filter: blur(14px);
+                // -webkit-backdrop-filter: blur(14px);
+                padding: 5px 15px;
+                border-start-start-radius: 15px;
+                border-start-end-radius: 15px;
+
+                .emp_no {
+                    font-size: 12px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    &::-webkit-input-placeholder::before {
+                        color: #666;
+                        content: "Line 1\A Line 2\A Line 3\A";
+                    }
+
+                    span:first-child {
+                        margin-left: 0px !important;
+                        margin-right: 20px;
+                    }
+                }
+
+                .emp_name_d {
+                    font-size: 22px;
+                    color: $color-text;
+
+                    span {
+                        font-size: 14px;
+                        color: #666;
+                    }
+                }
+
+                .emp_contact {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    span {
+                        margin: 0px 10px;
+
+                        &:first-child {
+                            margin-left: 0px !important;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

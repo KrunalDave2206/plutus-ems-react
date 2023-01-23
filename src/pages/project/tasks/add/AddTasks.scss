@@ -1,0 +1,113 @@
+@import '../../../../variables.scss';
+.assigned-user {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+
+    .status {
+        text-transform: capitalize;
+        .btn { 
+            text-decoration: none; 
+            // background-color: $task-status-normal; 
+            padding: 0px !important;
+        }
+        .status-state {
+            font-size: 14px;
+            color: #ffffff;
+            padding: 5px 6px;
+            border-radius: 8px;
+            background-color: $task-status-normal;
+            &.todo { background-color: $task-status-todo;}
+            &.done { background-color: $task-status-done;}
+        }
+    }
+
+    .assignee {
+        .btn { text-align: start; text-decoration: none; background-color: $task-asignee; }
+        .assignee-name {
+            border-radius: 8px;
+            color: #ffffff;
+        }
+    }
+    .priority {
+        .btn { text-decoration: none; padding: 0px !important; }
+        .priority-state {
+            font-size: 14px;
+            padding: 5px 6px;
+            color: #ffffff;
+            border-radius: 8px;
+            
+            &.lowest { background-color: $task-priority-lowest;}
+            &.low { background-color: $task-priority-low;}
+            &.medium { background-color: $task-priority-medium;}
+            &.high { background-color: $task-priority-high;}
+            &.highest { background-color: $task-priority-highest;}
+        }
+    }
+}
+.task-created{ font-size: 14px; }
+.border-b-1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.task-view {
+    border: none !important;
+    .tv-header{
+        border: none;
+        .tv-close { }
+        .form-control{
+            padding: 0px 8px !important;
+        }
+    }
+}
+.details-pan {
+    border-right: 1px solid rgba(0, 0, 0, 0.125);
+    .nav-pills{
+        .nav-link{
+            background-color: #ffffff !important;
+            color: #353839 !important;
+            &.active {
+                // background-color: $color-text !important;
+                // color: #ffffff !important;
+                color: $color-text !important;
+            }
+        }
+    }
+}
+
+.comments {
+    .tvc-date{
+        font-size: 12px;
+        color: #5f6061;
+    }
+    .card-header {
+        padding: 5px 10px;
+    }
+
+    .card-body {
+        pre {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.task-history {
+    .card-header {
+        padding: 5px 10px;
+    }
+
+    .card-body {
+        .from_state {
+            text-transform: uppercase;
+        }
+
+        .to_state {
+            text-transform: uppercase;
+        }
+    }
+}
+
+.task-form {
+    .form-select, .form-control{
+        width: 80%;
+    }
+}

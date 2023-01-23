@@ -1,0 +1,89 @@
+@import '../../../variables.scss';
+
+.career-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+
+    .langin {
+        max-width: 400px;
+        margin: 20px 0px;
+    }
+}
+.qanda {
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+}
+.cad-detail {
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: #ffffff88;
+    backdrop-filter: $bd-filter-blur;
+    -webkit-backdrop-filter: $bd-filter-blur;
+
+    .cad-qua {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.que-ans {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 10px 0px;
+
+    .que {
+        background-color: #ffffff;
+        padding: 5px 15px;
+        border-start-start-radius: 10px;
+        border-start-end-radius: 10px;
+    }
+
+    .inter {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff88;
+        backdrop-filter: $bd-filter-blur;
+        -webkit-backdrop-filter: $bd-filter-blur;
+        padding: 5px 10px;
+        border-end-end-radius: 10px;
+        border-end-start-radius: 10px;
+        border-top: 2px solid $color-text;
+
+        .interviewee {
+            display: flex;
+            gap: 1rem;
+            border-bottom: .5px solid #ffffff;
+            padding: 5px 0px;
+
+            .feedback {
+                width: 100%;
+
+                textarea {
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .ans {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #ffffff88;
+        backdrop-filter: $bd-filter-blur;
+        -webkit-backdrop-filter: $bd-filter-blur;
+        padding: 5px 10px;
+        border-end-end-radius: 10px;
+        border-end-start-radius: 10px;
+        border-top: 2px solid $color-text;
+
+        &.true {
+            border-color: #1fcecb;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.questions {
+    .ques-list{
+        .answers{
+            display: flex;
+            flex-wrap: wrap;
+            div {
+                flex: 50%;
+            }
+        }
+    }
+    .card {
+        .card-body{
+            padding: 0px;
+        }
+    }
+}

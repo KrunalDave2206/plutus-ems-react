@@ -1,0 +1,16 @@
+@import '../../../variables.scss';
+
+.holidays {
+    .card {
+        .card-body{
+            padding: 0px;
+            .list-group{
+                .list-group-item{
+                    code {
+                        color: $color-text !important;
+                    }
+                }
+            }
+        }
+    }
+}

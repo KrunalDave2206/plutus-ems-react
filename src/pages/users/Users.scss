@@ -1,0 +1,77 @@
+@import '../../variables.scss';
+
+.users-pg-view {
+    align-items: flex-start !important;
+
+    .users-view {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        max-height: 85vh;
+        overflow: auto;
+
+        .user-view {
+            display: flex;
+            flex-direction: row-reverse;
+            margin: 0px 0.8rem 0.8rem 0px;
+            border-radius: 10px;
+            box-shadow: $card-shadow;
+
+            .action {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                background-color: #ffffff66;
+                // background-color: rgba($color-text, 0.1);
+                // margin: 3px 0px;
+                padding: 2px;
+                border-end-end-radius: 10px;
+                border-start-end-radius: 10px;
+                border-left: 2px solid $color-text;
+
+            }
+
+            .detail {
+                background-color: #ffffff;
+                // backdrop-filter: blur(14px);
+                // -webkit-backdrop-filter: blur(14px);
+                padding: 10px 15px;
+                border-start-start-radius: 10px;
+                border-end-start-radius: 10px;
+
+                &.round {
+                    border-radius: 10px;
+                }
+
+                .emp_no {
+                    font-size: 12px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    &::-webkit-input-placeholder::before {
+                        color: #666;
+                        content: "Line 1\A Line 2\A Line 3\A";
+                    }
+                }
+
+                .emp_name_d {
+                    font-size: 22px;
+                    color: $color-text;
+
+                    span {
+                        font-size: 14px;
+                        color: $color-background;
+                    }
+                }
+
+                .emp_contact {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    gap: 15px;
+                }
+            }
+        }
+    }
+}

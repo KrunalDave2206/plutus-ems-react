@@ -1,0 +1,51 @@
+@import '../../../variables.scss';
+
+.user-form {
+    hr {
+        margin: 10px 0px 8px;
+    }
+
+    .font-cust-color {
+        font-size: 12px;
+    }
+
+    .form-check {
+        .form-check-label {
+            font-size: 12px;
+        }
+    }
+
+    .form-group {
+        .form-label {
+            color: $color-text;
+            // font-size: 12px;
+        }
+    }
+}
+
+.user-projects {
+    th {
+        color: $color-text  !important;
+    }
+
+    .up-pj {
+        display: flex;
+
+        .pjm-block {
+            margin-right: 8px;
+            padding: 5px;
+            border: 1px solid $color-background;
+            border-radius: 5px;
+            box-shadow: $header-boxshadow;
+            cursor: pointer;
+
+            .pj {
+                color: $color-text;
+            }
+
+            .pjm {
+                color: $color-background;
+            }
+        }
+    }
+}

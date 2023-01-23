@@ -1,0 +1,8 @@
+@import '../../../variables.scss';
+.hidden { display:none; }
+
+.leave-form {
+    .form-label{
+        color: $color-background !important;
+    }
+}
